@@ -7,11 +7,11 @@ heroText: SForum
 tagline: 高性能组件化的论坛程序✨
 actions:
   - text: 使用指南 💡
-    link: /guide
+    link: /guide/
     type: primary
 
   - text: 开发文档
-    link: /dev
+    link: /dev/
 
 features:
   - title: 免费开源

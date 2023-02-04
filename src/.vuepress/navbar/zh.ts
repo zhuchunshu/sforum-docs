@@ -12,5 +12,6 @@ export const zhNavbar = navbar([
     icon: "note",
     link: "/dev/",
   },
+  { text: "论坛", icon: "community", link: "https://www.runpod.cn" },
   { text: "案例", icon: "discover", link: "/demo/" },
 ]);
