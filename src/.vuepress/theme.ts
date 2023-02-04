@@ -3,7 +3,7 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://www.sforum.cn",
 
   author: {
     name: "RunPod",
@@ -86,7 +86,7 @@ export default hopeTheme({
        * Using Waline
        */
       provider: "Waline",
-      serverURL: "https://sforum-docs-comment.vercel.app",
+      serverURL: "https://sf.docs-comment.runpod.cn/",
     },
 
     // Disable features you don’t want here
