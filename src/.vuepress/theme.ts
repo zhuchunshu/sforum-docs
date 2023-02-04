@@ -43,7 +43,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
+      // "/demo/encrypt.html": ["1234"],
     },
   },
 
@@ -86,7 +86,7 @@ export default hopeTheme({
        * Using Waline
        */
       provider: "Waline",
-      serverURL: "https://sforum-docs.vercel.app",
+      serverURL: "https://sforum-docs-comment.vercel.app",
     },
 
     // Disable features you don’t want here
