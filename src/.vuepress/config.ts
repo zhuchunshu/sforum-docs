@@ -7,27 +7,7 @@ export default defineUserConfig({
 
   plugins: [
     searchProPlugin({
-      customFields: [
-        {
-          getter: (page) => page.frontmatter.category,
-          formatter: {
-            "/": "分类：$content",
-          },
-        },
-        {
-          getter: (page) => page.frontmatter.tag,
-          formatter: {
-            "/": "标签：$content",
-          },
-        },
-        {
-          name: "updateTime",
-          getter: (page) => page.data.git?.updateTime.toLocaleString(),
-          formatter: {
-            "/": "更新时间：$content",
-          },
-        },
-      ],
+
     }),
   ],
 
