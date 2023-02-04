@@ -1,51 +1,36 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { zhNavbar } from "./navbar/index.js";
+import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "RunPod",
+    url: "https://www.runpod.cn",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "zhuchunshu/sforum-docs",
 
-  docsDir: "demo/theme-docs/src",
+  // docsDir: "demo/theme-docs/src",
 
   locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
+  
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    "/": {
       // navbar
       navbar: zhNavbar,
 
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "<a href='https://github.com/zhuchunshu/SForum'>SForum</a>",
 
       displayFooter: true,
 
@@ -59,11 +44,25 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
     },
   },
 
   plugins: {
+  
+    components: {
+      // 你想使用的组件
+      components: [
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+        "SiteInfo"
+      ],
+    },
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
@@ -87,7 +86,7 @@ export default hopeTheme({
        * Using Waline
        */
       provider: "Waline",
-      serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      serverURL: "https://sforum-docs.vercel.app",
     },
 
     // Disable features you don’t want here

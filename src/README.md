@@ -1,110 +1,67 @@
 ---
 home: true
 icon: home
-title: Project home
+title: 主页
 heroImage: /logo.svg
-heroText: Project name
-tagline: You can place the description of the project here.
+heroText: SForum
+tagline: 高性能组件化的论坛程序✨
 actions:
-  - text: How to Use 💡
-    link: /demo/
+  - text: 使用指南 💡
+    link: /guide
     type: primary
 
-  - text: Docs
-    link: /guide/
+  - text: 开发文档
+    link: /dev
 
 features:
-  - title: Markdown Enhance
-    icon: markdown
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in markdown
-    link: https://theme-hope.vuejs.press/guide/markdown/
+  - title: 免费开源
+    icon: code
+    details: 遵循MIT协议开源，在放心使用的同时也可完完整整了解产品逻辑。
 
-  - title: Slide page
+  - title: 开发简单
     icon: slides
-    details: Adding slide pages to display things you like
-    link: https://theme-hope.vuejs.press/guide/layout/slides.html
+    details: 好用的同时,也能让PHP小白学会开发SForum插件
 
-  - title: Layout enhancement
+  - title: UI新鲜
     icon: layout
-    details: Adding breadcrumb, footer, improved navbar, improved page nav and etc.
-    link: https://theme-hope.vuejs.press/guide/layout/
+    details: 前端使用Tabler框架,年轻、好看、上手简单。
 
-  - title: Pageviews and comments
-    icon: comment
-    details: Start pageview statistics and comment support with Waline
-    link: https://theme-hope.vuejs.press/guide/feature/comment.html
+  - title: 部署方便
+    icon: OS
+    details: 支持docker compose一件部署,运行两行命令，程序就跑起来了。
 
-  - title: Article information
-    icon: info
-    details: Add author, writing date, reading time, word count and other information to your article
-    link: https://theme-hope.vuejs.press/guide/feature/page-info.html
+  - title: 可靠的授权机制
+    icon: safe
+    details: 不用担心开了CDN会导致用户串号问题。你担心的，我们都解决了。
 
-  - title: Blog support
-    icon: blog
-    details: Listing your articles with their dates, tags and categories with some awesome layouts
-    link: https://theme-hope.vuejs.press/guide/blog/
-
-  - title: Custom theme color
-    icon: palette
-    details: Supports custom theme colors and allows users to switch between preset theme colors
-    link: https://theme-hope.vuejs.press/guide/interface/theme-color.html
-
-  - title: Dark Mode
-    icon: contrast
-    details: Switch between light and dark modes freely
-    link: https://theme-hope.vuejs.press/guide/interface/darkmode.html
-
-  - title: Full A11y support
-    icon: support
-    details: Full support of accessibility in your site
-    link: https://theme-hope.vuejs.press/guide/interface/accessibility.html
-
-  - title: Article Encryption
+  - title: 一键下线
     icon: lock
-    details: Encrypt you articles based on page links, so that only the one you want could see them
-    link: https://theme-hope.vuejs.press/guide/feature/encrypt.html
+    details: 用户设置页面可以下线已登陆的其他设备，密码泄露也不慌。
 
-  - title: Copy button
-    icon: copy
-    details: Copy codes with one click in code blocks
-    link: https://theme-hope.vuejs.press/guide/feature/copy-code.html
+  - title: 主题色切换
+    icon: palette
+    details: 支持自定义主题色并允许用户在预设的主题颜色之间切换
 
-  - title: Image preview
-    icon: pic
-    details: Support viewing, zooming, sharing your page images like a gallery
-    link: https://theme-hope.vuejs.press/guide/feature/photo-swipe.html
+  - title: 深色模式
+    icon: contrast
+    details: 可以自由切换浅色模式与深色模式
 
-  - title: SEO enhancement
-    icon: config
-    details: Optimize pages for search engines
-    link: https://theme-hope.vuejs.press/guide/advanced/seo.html
+  - title: 短标签
+    icon: support
+    details: ShortCode(短代码)增强用户与网站之间的交互。
 
-  - title: Sitemap
-    icon: sitemap
-    details: Generate a Sitemap for your site
-    link: https://theme-hope.vuejs.press/guide/advanced/sitemap.html
+  - title: 速度与性能
+    icon: launch
+    details: 后端使用swoole+hyperf框架，大概比PHP-FPM程序强10倍性能。
 
-  - title: Feed support
-    icon: rss
-    details: Generate feed to allow users to subscribe it
-    link: https://theme-hope.vuejs.press/guide/advanced/feed.html
+  - title: 灵活组件化
+    icon: light
+    details: 功能基本依赖插件实现，每个功能都有单独开关，不想用就关掉。
 
-  - title: PWA support
-    icon: mobile
-    details: Make your site more like an APP
-    link: https://theme-hope.vuejs.press/guide/advanced/pwa.html
+  - title: 功能丰富
+    icon: type
+    details: 把多数程序收费的功能免费带给大家，减少建站成本。
 
-  - title: More new features
-    icon: more
-    details: Including icon support, fullscreen button, etc.
-    link: https://theme-hope.vuejs.press/guide/feature/
-
-copyright: false
-footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> | MIT Licensed, Copyright © 2019-present Mr.Hope
+copyright: 
+footer: <a href="https://github.com/zhuchunshu/SForum/" target="_blank">SForum</a> | MIT 协议, 版权所有 © 2021-present RunPod.Cn
 ---
-
-This is an example of a project homepage. You can place your main content here.
-
-To use this layout, you need to set `home: true` in the page front matter.
-
-For related descriptions of configuration items, please see [Project HomePage Layout Config](https://theme-hope.vuejs.press/guide/layout/home/).
