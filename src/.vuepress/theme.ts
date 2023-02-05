@@ -15,6 +15,7 @@ export default hopeTheme({
   logo: "/logo.svg",
 
   repo: "zhuchunshu/sforum-docs",
+  docsBranch : "master",
 
   // docsDir: "demo/theme-docs/src",
 
