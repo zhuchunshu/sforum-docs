@@ -17,7 +17,7 @@ export default hopeTheme({
   repo: "zhuchunshu/sforum-docs",
   docsBranch : "master",
 
-  // docsDir: "demo/theme-docs/src",
+  docsDir: "src",
 
   locales: {
   
