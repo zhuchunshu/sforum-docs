@@ -4,23 +4,43 @@ export const zhSidebar = sidebar({
   "/": [
     "",
     {
-      text: "使用文档",
-      icon: "note",
-      prefix: "guide/",
-      children: "structure",
+      text: "使用教程",
+      icon: "creative",
+      link: "use/",
     },
     {
       text: "开发文档",
       icon: "note",
-      prefix: "dev/",
-      children: "structure",
+      link: "dev/",
     },
     {
       icon: "discover",
       text: "客户案例",
       prefix: "demo/",
       link: "demo/",
-      children: "structure",
     },
   ],
+  "/use/":[
+    "",
+    {
+      icon: "launch",
+      text: "docker部署",
+      prefix: "docker/",
+      link: "docker/",
+      children: "structure",
+    },
+    {
+      icon: "launch",
+      text: "原生部署",
+      prefix: "source/",
+      link: "source/",
+      children: "structure",
+    },
+    {
+      icon:"proxy",
+      text:"反向代理",
+      link:"reverse-proxy"
+    },
+    "help"
+  ]
 });

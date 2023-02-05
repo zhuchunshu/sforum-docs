@@ -6,8 +6,8 @@ heroImage: /logo.svg
 heroText: SForum
 tagline: 高性能组件化的论坛程序✨
 actions:
-  - text: 使用指南 💡
-    link: /guide/
+  - text: 使用教程 💡
+    link: /use/
     type: primary
 
   - text: 开发文档

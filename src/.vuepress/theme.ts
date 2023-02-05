@@ -48,6 +48,7 @@ export default hopeTheme({
   },
 
   plugins: {
+    
   
     components: {
       // 你想使用的组件
