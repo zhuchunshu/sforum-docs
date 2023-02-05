@@ -70,6 +70,7 @@ cd ~/oneinstack
 ```bash
 wget https://mirrors.tencent.com/composer/composer.phar
 sudo mv composer.phar  /usr/local/bin/composer
+chmod +x /usr/local/bin/compose
 ```
 国内服务器加速:
 ```bash
