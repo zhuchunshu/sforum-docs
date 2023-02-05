@@ -1,6 +1,7 @@
 ---
 title: 使用docker-compose安装SForum
 ---
+如果你还没有安装docker环境，请查看此文章：[安装docker环境](/use/docker/install-docker)
 ### 开始部署
 打开终端(ssh工具)，创建一个目录并cd进去，例如
 ```bash
@@ -96,6 +97,11 @@ docker compose up -d 
 SForum服务运行成功后，会创建一个http 服务并占用9501端口。
 那么接下来，我们需要解析域名并反向代理9501端口。
 
+如果你不会，可以看此文章：[反向代理](/use/reverse-proxy)
+
+接下来访问 域名进入 最后安装页面
+
+![2023-02-05152657.png](/images/2023-02-05152657.png)
 
 ### 删除服务
 如果想彻底删除此站点，可以运行以下命令：
