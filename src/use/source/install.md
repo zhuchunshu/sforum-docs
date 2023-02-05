@@ -98,7 +98,7 @@ create DATABASE 数据库名;
 ```
 创建数据库用户
 ```bash
-CREATE USER '用户名'@'localhost'  IDENTIFIED BY '密码';
+CREATE USER '用户名'@'localhost' IDENTIFIED BY '密码';
 ```
 赋予权限
 ```bash
@@ -119,7 +119,7 @@ cd ~ && composer create-project zhuchunshu/sforum
 ### 完成安装
 以上任务完成后,我们 cd 到程序目录下进行最后几步安装
 ```bash
-cd ~/super-forum
+cd ~/sforum
 ```
 执行程序启动命令
 
