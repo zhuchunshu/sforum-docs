@@ -21,7 +21,7 @@ export const zhNavbar = navbar([
       { text: "API文档", link: "api/README.md" },
       { text: "插件开发", link: "plugin/README.md"},
       { text: "主题开发", link: "theme/README.md"},
-      { text: "函数/工具", link: "theme/README.md"},
+      { text: "工具/函数", link: "dev-tool"},
     ],
   },
   { text: "论坛", icon: "community", link: "https://www.runpod.cn" },

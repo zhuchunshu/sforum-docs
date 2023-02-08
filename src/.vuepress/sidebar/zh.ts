@@ -43,5 +43,44 @@ export const zhSidebar = sidebar({
     },
     "update",
     "help"
-  ]
+  ],
+  // 开发
+  "/dev/":[
+    "",
+    {
+      icon: "arrow",
+      text: "入门文档",
+      prefix: "started/",
+      link: "started/",
+      children: "structure",
+    },
+    {
+      icon: "api",
+      text: "API文档",
+      prefix: "api/",
+      link: "api/",
+      children: "structure",
+    },
+    {
+      icon: "plugin",
+      text: "插件开发",
+      prefix: "plugin/",
+      link: "plugin/",
+      children: "structure",
+    },
+    {
+      icon: "linter",
+      text: "主题开发",
+      prefix: "theme/",
+      link: "theme/",
+      children: "structure",
+    },
+    {
+      icon: "tool",
+      text: "工具/函数",
+      prefix: "dev-tool/",
+      link: "dev-tool/",
+      children: "structure",
+    },
+  ],
 });

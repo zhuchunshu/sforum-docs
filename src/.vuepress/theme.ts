@@ -4,6 +4,8 @@ import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://www.sforum.cn",
+  
+  darkmode: 'switch',
 
   author: {
     name: "RunPod",
