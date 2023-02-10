@@ -98,14 +98,16 @@ return session()->getId();
 ?>
 ```
 
-### getPath
-获取目录下的所有文件
+### getPathDir
+获取目录下的所有文件夹
 ```php
 <?php
-return getPath(BASE_PATH);
-// [".DS_Store",".dockerignore",".env",".env.example",".git",".gitattributes",".github",".gitignore",".idea",".php-cs-fixer.php","CodeFec","Dockerfile","LICENSE","README.md","app","bin","build-info.php","composer.json","composer.lock","config","docker-compose-test.yml","docker-compose.yml","migrations","node_modules","package-lock.json","package.json","phpstan.neon","plugins.mix.js","public","resources","runtime","storage","test","vendor","webpack.mix.js","yarn.lock"]
+return getPathDir(BASE_PATH);
+// [".git",".github",".idea","app","bin","config","migrations","node_modules","public","resources","runtime","storage","test","vendor"]
 ?>
 ```
+
+
 
 ### admin_abort
 返回error页面，用法：admin_abort(array|string 响应信息,int 状态码,string 跳转链接)
