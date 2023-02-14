@@ -83,3 +83,12 @@ SForum服务运行成功后，会创建一个http 服务并占用9501端口。
 ```bash
 docker-compose down
 ```
+## 最后
+
+访问域名/admin 进入后台
+
+找到:组件-> 管理
+
+然后点击对所有已启动插件进行数据迁移
+
+![uploadtopic202212091167058073534HloRS8Nv.png](https://www.runpod.cn/upload/topic/202212/09/1_1670580735_34HloRS8Nv.png)

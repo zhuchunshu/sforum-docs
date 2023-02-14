@@ -83,3 +83,13 @@ location /
 接下来访问 域名进入 最后安装页面
 
 ![2023-02-05152657.png](/images/2023-02-05152657.png)
+
+## 安装完成后
+
+访问域名/admin 进入后台
+
+找到:组件-> 管理
+
+然后点击对所有已启动插件进行数据迁移
+
+![uploadtopic202212091167058073534HloRS8Nv.png](https://www.runpod.cn/upload/topic/202212/09/1_1670580735_34HloRS8Nv.png)

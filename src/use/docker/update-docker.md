@@ -2,6 +2,9 @@
 title: 在docker环境中升级SForum
 index: true
 ---
+:::info
+遇到问题不要慌,点击这里查看一些解决方法：[服务补救](/use/help.html#更新报错)，如果服务补救没能帮到你，请前往QQ群或论坛反馈。
+:::
 ### 进入容器终端
 
 首先需要进入容器终端，如果你不会，请阅读这篇文章：[对docker容器的一些操作](/use/docker/operate-container.html#进入容器终端)
