@@ -4,6 +4,9 @@ import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
   base: "/",
+  lang: "zh-CN",
+  title: "SForum",
+  description: "SForum 文档,SForum是一个高性能组件化的论坛程序,使用PHP+hypperf开发",
 
   plugins: [
     docsearchPlugin({
@@ -51,14 +54,6 @@ export default defineUserConfig({
       }
     }),
   ],
-
-  locales: {
-    "/": {
-      lang: "zh-CN",
-      title: "SForum",
-      description: "SForum 文档,SForum是一个高性能组件化的论坛程序,使用PHP+hypperf开发",
-    },
-  },
 
   theme,
 

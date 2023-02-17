@@ -1,12 +1,8 @@
 ---
 icon: loop
 title: 更新SForum
+index: false
 ---
-
-::: warning
-此文档过于陈旧，点击跳转至新版:[点我跳转](/use/update/)
-:::
-
 ::: warning
 遇到问题千万不要重启`容器/服务器`，点击这里查看一些解决方法：[服务补救](/use/help.html#更新报错)，如果服务补救没能帮到你，请前往QQ群或论坛反馈。
 :::

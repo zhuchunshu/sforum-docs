@@ -41,7 +41,13 @@ export const zhSidebar = sidebar({
       text:"反向代理",
       link:"reverse-proxy"
     },
-    "update",
+    {
+      icon: "loop",
+      text: "更新",
+      prefix: "update/",
+      link: "update/",
+      children: "structure",
+    },
     "help"
   ],
   // 开发

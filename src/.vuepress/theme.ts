@@ -21,13 +21,7 @@ export default hopeTheme({
 
   docsDir: "src",
 
-  locales: {
-  
-    /**
-     * Chinese locale config
-     */
-    "/": {
-      // navbar
+  // navbar
       navbar: zhNavbar,
 
       // sidebar
@@ -41,8 +35,6 @@ export default hopeTheme({
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
-    },
-  },
 
   encrypt: {
     config: {
@@ -51,8 +43,6 @@ export default hopeTheme({
   },
 
   plugins: {
-    
-  
     components: {
       // 你想使用的组件
       components: [
