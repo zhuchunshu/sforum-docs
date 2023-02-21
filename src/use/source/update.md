@@ -9,7 +9,7 @@ title: 更新SForum
 如果你当前 super-forum >= V2.2.0 可以在 super-forum 根目录下直接运行以下命令进行升级
 
 ```bash
-php CodeFec CodeFec:U && php CodeFec
+rm -rf app/Listener/Boot.php && php CodeFec CodeFec:U && php CodeFec:K
 ```
 
 ### 杀死super-forum服务
