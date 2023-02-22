@@ -1,33 +1,59 @@
-name: Deploy to Server
-
+name: CI/CD # 此工作流程（workflow）的名字
 on:
   push:
     branches:
-      - master
-
+      - main
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
+  FTP-Deploy-Action:
+    name: CI&CD
+    runs-on: ubuntu-22.04 # 运行环境
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Install Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3 # 切换分支
         with:
-          node-version: '14.x'
+          fetch-depth: 2
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3 # 使用node环境
+        with:
+          node-version: 16 # 版本16
+
+      - name: Cache node modules
+        id: cache # 缓存id
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules # 缓存名字
+        with:
+          path: node_modules # 缓存路径
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }} # 缓存标识
 
       - name: Install Dependencies
-        run: npm install
+        if: steps.cache.outputs.cache-hit != 'true' # 如果没有缓存的话
+        run: npm install # 安装依赖
 
-      - name: Build
-        run: npm run docs:build
+      - name: Build project
+        run: npm run docs:build # 构建项目和生成代码覆盖率报告
 
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@v2.1.5
+      # 如果FTP-Deploy-Action出现，Dirty repository: Having uncommitted changes. 问题时，使用以下注释步骤解决问题
+      - name: reset git
+        run: git reset --hard
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          ssh-username: ${{ secrets.SSH_USERNAME }}
-          server-ip: ${{ secrets.SERVER_IP }}
-          local-folder: ./src/.vuepress/dist/
-          remote-folder: /root/www/sforum-docs/
+          server: ${{ secrets.FTP_IP }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: docs/.vuepress/dist/ # 选择哪些文件要部署到服务器，这个选项在这里选了之后，要在.git-ftp-include中添加相应的路径
+          server-dir: /
+
+#           ftp-server: sftp://${{ secrets.FTP_IP }}/root/www/sforum-docs # 服务器地址和端口（可以填域名，不过我服务器做了全站加速会导向加速结点的IP，所以只能用服务器的IP）
+#           ftp-username: ${{ secrets.FTP_USERNAME }} # FTP用户名
+#           ftp-password: ${{ secrets.FTP_PASSWORD }} # FTP密码
+#           git-ftp-args: --insecure # （如果是FTP连接的话--insecure不用加）
+#           local-dir: src/.vuepress/dist/ # 选择哪些文件要部署到服务器，这个选项在这里选了之后，要在.git-ftp-include中添加相应的路径
+
+      - name: upload-artifact
+        uses: actions/upload-artifact@v3 #共享或保存action过程中产生的文件
+        with:
+          name: static_web_file
+          path: ./src/.vuepress/dist/ # or path/to/artifact
