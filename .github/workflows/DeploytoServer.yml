@@ -2,7 +2,7 @@ name: CI/CD # 此工作流程（workflow）的名字
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   FTP-Deploy-Action:
     name: CI&CD
