@@ -1,0 +1,33 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run docs:build
+
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-username: ${{ secrets.SSH_USERNAME }}
+          server-ip: ${{ secrets.SERVER_IP }}
+          local-folder: ./src/.vuepress/dist/
+          remote-folder: /root/www/sforum-docs/
