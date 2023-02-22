@@ -22,9 +22,9 @@ jobs:
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
       with:
-        local_dir: ./src/dist/
-        remote_dir: /root/www/sforum-docs/
-        args: "-avzr --delete"
-        host: ${{ secrets.REMOTE_HOST }}
-        username: ${{ secrets.REMOTE_USER }}
+        SOURCE: ./src/dist/
+        TARGET: /root/www/sforum-docs/
+        ARGS: "-avzr --delete"
