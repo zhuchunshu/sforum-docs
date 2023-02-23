@@ -20,5 +20,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           source: "src/.vuepress/dist"
-          target: /root/www/sforum-docs/
+          target: /www/wwwroot/sforum-docs/
+          rm: true
           strip_components: 3
