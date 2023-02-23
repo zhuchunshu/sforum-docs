@@ -8,6 +8,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: rm source files
+      - uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          script: |
+            rm -rf /www/wwwroot/sforum-docs
+            mkdir /www/wwwroot/sforum-docs
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: yarn install
