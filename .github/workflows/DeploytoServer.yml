@@ -28,3 +28,4 @@ jobs:
         SOURCE: ./src/dist/
         TARGET: /root/www/sforum-docs/
         ARGS: "-avzr --delete"
+        
