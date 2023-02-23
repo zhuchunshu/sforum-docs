@@ -63,5 +63,5 @@ features:
     details: 把多数程序收费的功能免费带给大家，减少建站成本。
 
 copyright: 
-footer: <a href="https://github.com/zhuchunshu/SForum/" target="_blank">SForum</a> | MIT 协议, 版权所有 © 2021-present RunPod.Cn
+footer: <a href="https://github.com/zhuchunshu/SForum/" target="_blank">SForum</a> | MIT 协议, 版权所有 © 2021-present RunPod.Cn | CDN赞助商 <a href="https://my.farcdn.net/">FarCdn</a>
 ---

@@ -27,7 +27,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "<a href='https://github.com/zhuchunshu/SForum'>SForum</a>",
+      footer: "<a href='https://github.com/zhuchunshu/SForum'>SForum</a> | CDN赞助商: <a href='https://my.farcdn.net/'>FarCdn</a>",
 
       displayFooter: true,
 
