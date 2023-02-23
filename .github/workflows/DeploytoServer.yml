@@ -19,5 +19,5 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
-          source: ./src/.vuepress/dist/
+          source: "src/.vuepress/dist"
           target: /root/www/sforum-docs/
