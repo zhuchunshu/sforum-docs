@@ -72,7 +72,7 @@ docker compose up -d 
 SForum服务运行成功后，会创建一个http 服务并占用9501端口。
 那么接下来，我们需要解析域名并反向代理9501端口。
 
-如果你不会，可以看此文章：[反向代理](/use/reverse-proxy)
+如果你不会，可以看此文章：[反向代理](/use/reverse-proxy.md)
 
 接下来访问 域名进入 最后安装页面
 
