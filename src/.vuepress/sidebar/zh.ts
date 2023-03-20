@@ -42,6 +42,13 @@ export const zhSidebar = sidebar({
       link:"reverse-proxy"
     },
     {
+      icon: "exercise",
+      text: "SForum使用方法",
+      prefix: "instructions/",
+      link: "instructions/",
+      children: "structure",
+    },
+    {
       icon: "loop",
       text: "更新",
       prefix: "update/",
