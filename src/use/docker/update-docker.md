@@ -12,7 +12,7 @@ index: true
 ### 执行升级命令
 进入容器终端后执行以下命令来进行更新:
 ```bash
-rm -rf app/Listener/Boot.php && php CodeFec CodeFec:K && php CodeFec CodeFec:U
+rm -rf app/Listener/Boot.php && php CodeFec CodeFec:U && composer du -o
 ```
 更新完成后运行以下命令退出容器终端
 ```bash

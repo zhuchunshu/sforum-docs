@@ -9,7 +9,7 @@ title: 更新SForum
 如果你当前 super-forum >= V2.2.0 可以在 super-forum 根目录下直接运行以下命令进行升级
 
 ```bash
-rm -rf app/Listener/Boot.php && php CodeFec CodeFec:U && php CodeFec:K
+rm -rf app/Listener/Boot.php && php CodeFec CodeFec:U 
 ```
 
 ### 杀死super-forum服务
@@ -27,6 +27,7 @@ sudo supervisorctl restart all
 ### 更新完成后
 更新完成后在网站根目录下运行以下命令：
 ```bash
-composer update && php CodeFec CodeFec:K && php CodeFec ClearCache && && php CodeFec
+composer update && composer du -o
 ```
+
 然后重启守护进程即可,（堡塔应用管理器应该先停止再启动）
