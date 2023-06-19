@@ -21,8 +21,8 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            rm -rf /www/wwwroot/sforum-docs
-            mkdir /www/wwwroot/sforum-docs
+            sudo rm -rf /www/wwwroot/sforum-docs
+            sudo mkdir /www/wwwroot/sforum-docs
       - name: Deploy
         uses: appleboy/scp-action@master
         with:
