@@ -65,3 +65,15 @@ features:
 copyright: 
 footer: <a href="https://github.com/zhuchunshu/SForum/" target="_blank">SForum</a> | MIT 协议, 版权所有 © 2021-present RunPod.Cn | CDN赞助商 <a href="https://my.farcdn.net/">FarCdn</a>
 ---
+
+## ✨安装
+以下是docker快速启动示例，完整教程请阅读：[使用文档](/use/README.md)
+```shell
+cd ~ && mkdir SForum && cd SForum
+wget https://raw.githubusercontent.com/zhuchunshu/SForum/master/docker-compose.yml
+docker-compose up -d 
+```
+## 💖鸣谢
+ - [JetBrains](https://jetbrains.com) 提供开发工具包
+ - [亚洲云](https://www.asiayun.com/aff/LGFNQAXK) 服务器赞助
+ - [FarCdn](https://my.farcdn.net) 本站Cdn赞助

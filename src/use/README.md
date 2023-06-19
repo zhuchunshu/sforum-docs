@@ -19,3 +19,8 @@ title: 前言
 当你安装时遇到问题请前往 [论坛](https://www.runpod.cn)反馈 ，或者进QQ群 798695907 免费获取技术支持。
 
 在反馈前请善用论坛搜索 ，并查看：[常见问题页面](/use/help)
+
+## 安装视频
+因为B站上传视频会自动压缩，高清视频教程下载地址：[https://pan.quark.cn/s/696f1b22c484](https://pan.quark.cn/s/696f1b22c484)
+
+<BiliBili bvid="BV1Xo4y177Mf" autoplay=false />
