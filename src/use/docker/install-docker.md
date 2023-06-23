@@ -17,11 +17,11 @@ systemctl enable docker
 在 Linux 上的也安装十分简单，从 官方 GitHub Release 处直接下载编译好的二进制文件即可。
 例如，在 Linux 64 位系统上直接下载对应的二进制包。
 ```bash
-sudo curl -L curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose > /usr/local/bin/docker-compose
+sudo curl -L curl -SL https://github.com/docker/compose/releases/download/v2.19.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose > /usr/local/bin/docker-compose
 ```
 国内用户可以使用以下方式加快下载
 ```bash
-sudo curl -L https://download.fastgit.org/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 > /usr/local/bin/docker-compose
+sudo curl -L https://download.fastgit.org/docker/compose/releases/download/v2.19.0/docker-compose-linux-x86_64 > /usr/local/bin/docker-compose
 ```
 运行完上面两条中其一命令后运行以下命令：
 ```bash
