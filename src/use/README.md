@@ -5,6 +5,8 @@ title: 前言
 贴心的为你提供以下安装技术文档
 :::
 
+一键安装脚本 [https://www.runpod.cn/715.html](https://www.runpod.cn/715.html)
+
 ### docker部署 
 如果你图省事，想3分钟内安装完毕，可以点击这里：[Docker部署](/use/docker)
 
