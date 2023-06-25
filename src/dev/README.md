@@ -5,9 +5,6 @@ icon: creative
 
 不要把SForum当做一个单一的论坛程序，开发者可通过插件开发对SForum进行修改、扩展。
 
-## 开发条件
-
-首先你要在你的开发主机上原生安装SForum，文档在这：[原生部署SForum](/use/source/)
 
 ### PHP
 SForum基于PHP8.0开发，你要有PHP8.0基础，点击下面这个链接可以帮助你快速了解 php8.0：

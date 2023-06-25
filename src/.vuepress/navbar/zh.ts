@@ -8,7 +8,6 @@ export const zhNavbar = navbar([
     prefix: "/use/",
     children: [
       { text: "使用docker部署", link: "docker/README.md" },
-      { text: "原生部署", link: "source/README.md"},
       { text: "常见问题", link: "help"},
     ],
   },

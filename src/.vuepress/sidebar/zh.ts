@@ -30,13 +30,6 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
     {
-      icon: "arrow",
-      text: "原生部署",
-      prefix: "source/",
-      link: "source/",
-      children: "structure",
-    },
-    {
       icon:"proxy",
       text:"反向代理",
       link:"reverse-proxy"
