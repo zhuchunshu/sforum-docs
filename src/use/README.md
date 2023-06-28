@@ -5,7 +5,22 @@ title: 前言
 贴心的为你提供以下安装技术文档
 :::
 
-一键安装脚本 [https://www.runpod.cn/715.html](https://www.runpod.cn/715.html)
+### 一键安装脚本
+
+跟安装宝塔面板一样，运行一行命令，你只管输入yes或者no
+
+Ubuntu/Debian
+```bash
+wget -O sforum_ubuntu.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/ubuntu.sh && bash ./sforum_ubuntu.sh
+```
+Centos
+```bash
+wget -O sforum_centos.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/centos.sh && bash ./sforum_centos.sh
+```
+自动获取系统信息进行安装（不建议！）
+```bash
+wget -O sforum_install.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install.sh && bash ./sforum_install.sh
+```
 
 ### docker部署 
 如果你图省事，想3分钟内安装完毕，可以点击这里：[Docker部署](/use/docker)

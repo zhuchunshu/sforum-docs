@@ -7,7 +7,7 @@ export const zhNavbar = navbar([
     icon: "creative",
     prefix: "/use/",
     children: [
-      { text: "一键安装脚本", link: "https://www.runpod.cn/715.html" },
+      { text: "安装教程", link: "" },
       { text: "使用docker部署", link: "docker/README.md" },
       { text: "常见问题", link: "help"},
     ],

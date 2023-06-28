@@ -28,7 +28,7 @@ features:
 
   - title: 部署方便
     icon: OS
-    details: 支持docker compose一件部署,运行两行命令，程序就跑起来了。
+    details: 运行一键安装脚本，即可完成安装，无需复杂命令。
 
   - title: 可靠的授权机制
     icon: safe
@@ -67,12 +67,23 @@ footer: <a href="https://github.com/zhuchunshu/SForum/" target="_blank">SForum</
 ---
 
 ## ✨安装
-以下是docker快速启动示例，完整教程请阅读：[使用文档](/use/README.md)
-```shell
-cd ~ && mkdir SForum && cd SForum
-wget https://raw.githubusercontent.com/zhuchunshu/SForum/master/docker-compose.yml
-docker-compose up -d 
+**除了使用以下一键安装脚本，你还可以使用docker来部署，[点我查看](/use/docker)**
+
+### 一键安装脚本
+
+自动安装脚本（自动获取系统信息进行安装）
+```bash
+wget -O sforum_install.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install.sh && bash ./sforum_install.sh
 ```
+Ubuntu/Debian
+```bash
+wget -O sforum_ubuntu.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/ubuntu.sh && bash ./sforum_ubuntu.sh
+```
+Centos
+```bash
+wget -O sforum_centos.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/centos.sh && bash ./sforum_centos.sh
+```
+
 ## 💖鸣谢
  - [JetBrains](https://jetbrains.com) 提供开发工具包
  - [亚洲云](https://www.asiayun.com/aff/LGFNQAXK) 服务器赞助
