@@ -42,4 +42,4 @@ wget -O sforum_install.sh https://ghproxy.com/https://raw.githubusercontent.com/
 ## 安装视频
 因为B站上传视频会自动压缩，高清视频教程下载地址：[https://pan.quark.cn/s/696f1b22c484](https://pan.quark.cn/s/696f1b22c484)
 
-B站：[https://www.bilibili.com/video/BV1Xo4y177Mf/](https://www.bilibili.com/video/BV1Xo4y177Mf/)
+B站：[https://www.bilibili.com/video/BV1ch4y1f7Di/](https://www.bilibili.com/video/BV1ch4y1f7Di/)
