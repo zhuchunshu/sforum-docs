@@ -38,7 +38,6 @@ Caddyfile配置文件:
     encode zstd gzip
     reverse_proxy 127.0.0.1:9501
 }
-
 ```
 ## nginx反向代理配置
 如果你了解nginx如何使用，并且会对nginx网站进行配置，那么可以参考以下配置信息添加到nginx网站配置文件内。
