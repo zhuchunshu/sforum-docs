@@ -17,12 +17,12 @@ Centos
 ```bash
 wget -O sforum_centos.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/centos.sh && bash ./sforum_centos.sh
 ```
-自动获取系统信息进行安装
+获取存放SForum服务docker-compose.yml文件的目录列表
 ```bash
 wget -O sforum_get_all_services.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/get_all_services.sh && bash ./sforum_get_all_services.sh
 ```
+自动获取系统信息进行安装
 
-获取存放SForum服务docker-compose.yml文件的目录列表
 ```bash
 wget -O sforum_install.sh https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install.sh && bash ./sforum_install.sh
 ```
