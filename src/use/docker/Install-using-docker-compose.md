@@ -11,7 +11,7 @@ cd ~ && mkdir SForum && cd SForum
 
 国内服务器
 ```bash
-wget https://ghproxy.com/https://raw.githubusercontent.com/zhuchunshu/SForum/master/docker-compose.yml
+wget https://gh-proxy.com/https://raw.githubusercontent.com/zhuchunshu/SForum/master/docker-compose.yml
 ```
 
 国外服务器
