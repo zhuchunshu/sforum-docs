@@ -11,20 +11,20 @@ title: 前言
 
 Ubuntu/Debian
 ```bash
-wget -O sforum_ubuntu.sh https://gh-proxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/ubuntu.sh && bash ./sforum_ubuntu.sh
+wget -O sforum_ubuntu.sh https://ghproxy.typecho.ltd/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/ubuntu.sh && bash ./sforum_ubuntu.sh
 ```
 Centos
 ```bash
-wget -O sforum_centos.sh https://gh-proxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/centos.sh && bash ./sforum_centos.sh
+wget -O sforum_centos.sh https://ghproxy.typecho.ltd/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install/centos.sh && bash ./sforum_centos.sh
 ```
 获取存放SForum服务docker-compose.yml文件的目录列表
 ```bash
-wget -O sforum_get_all_services.sh https://gh-proxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/get_all_services.sh && bash ./sforum_get_all_services.sh
+wget -O sforum_get_all_services.sh https://ghproxy.typecho.ltd/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/get_all_services.sh && bash ./sforum_get_all_services.sh
 ```
 自动获取系统信息进行安装
 
 ```bash
-wget -O sforum_install.sh https://gh-proxy.com/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install.sh && bash ./sforum_install.sh
+wget -O sforum_install.sh https://ghproxy.typecho.ltd/https://raw.githubusercontent.com/zhuchunshu/sforum-script/main/install.sh && bash ./sforum_install.sh
 ```
 
 ### docker部署 
