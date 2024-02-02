@@ -21,8 +21,8 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            sudo rm -rf /www/wwwroot/sforum-docs
-            sudo mkdir /www/wwwroot/sforum-docs
+            sudo rm -rf /app/wwwroot/sforum-docs
+            sudo mkdir -p /app/wwwroot/sforum-docs
       - name: Deploy
         uses: appleboy/scp-action@master
         with:
@@ -30,6 +30,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           source: "src/.vuepress/dist"
-          target: /www/wwwroot/sforum-docs/
+          target: /app/wwwroot/sforum-docs/
           rm: true
           strip_components: 3
