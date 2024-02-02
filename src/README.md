@@ -63,7 +63,7 @@ features:
     details: 把多数程序收费的功能免费带给大家，减少建站成本。
 
 copyright: 
-footer: <a href="https://github.com/zhuchunshu/SForum/" target="_blank">SForum</a> | MIT 协议, 版权所有 © 2021-present RunPod.Cn | CDN赞助商 <a href="https://my.farcdn.net/">FarCdn</a>
+footer: <a href="https://github.com/zhuchunshu/SForum/" target="_blank">SForum</a> | MIT 协议, 版权所有 © 2021-present RunPod.Cn | CDN赞助商 <a href="https://console.kdun.cn/?9a56976b04df62e5b7ed">酷盾SCDN</a> | 服务器赞助商 <a href="https://www.asiayun.com/aff/LGFNQAXK">亚洲云</a> | 网站备案号 <a href="https://beian.miit.gov.cn/">浙ICP备2023043421号-2</a>
 ---
 
 ## ✨安装
@@ -85,6 +85,6 @@ wget -O sforum_centos.sh https://ghproxy.typecho.ltd/https://raw.githubuserconte
 ```
 
 ## 💖鸣谢
+ - [Kdun酷盾SCDN](https://my.farcdn.net) 本站Cdn赞助
+  - [亚洲云](https://www.asiayun.com/aff/LGFNQAXK) 服务器赞助
  - [JetBrains](https://jetbrains.com) 提供开发工具包
- - [亚洲云](https://www.asiayun.com/aff/LGFNQAXK) 服务器赞助
- - [FarCdn](https://my.farcdn.net) 本站Cdn赞助

@@ -27,7 +27,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "<a href='https://github.com/zhuchunshu/SForum'>SForum</a> | CDN赞助商: <a href='https://my.farcdn.net/'>FarCdn</a>",
+      footer: '<a href="https://github.com/zhuchunshu/SForum">SForum</a> | CDN赞助商 <a href="https://console.kdun.cn/?9a56976b04df62e5b7ed">酷盾SCDN</a> | 服务器赞助商 <a href="https://www.asiayun.com/aff/LGFNQAXK">亚洲云</a> | 网站备案号 <a href="https://beian.miit.gov.cn/">浙ICP备2023043421号-2</a> ',
 
       displayFooter: true,
 
